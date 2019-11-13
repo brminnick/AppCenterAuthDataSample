@@ -16,12 +16,7 @@ namespace AppCenterAuthDataSample
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        int _buttonClicks;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+        public MainPage() => InitializeComponent();
 
         async void HandleSignInButtonClicked(object sender, EventArgs e)
         {

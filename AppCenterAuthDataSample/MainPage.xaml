@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AppCenterAuthDataSample.MainPage">
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-        <!-- Place new controls here -->
-        <Label x:Name="OutputLabel" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-        <Button Text="Sign In" Clicked="HandleSignInButtonClicked" HorizontalOptions="CenterAndExpand"/>
-        <Button Text="Get Shared Data" Clicked="HandleGetSharedDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
-        <Button Text="Get User Data" Clicked="HandleGetUserDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
-        <Button Text="Add Data" Clicked="HandleAddDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
-    </StackLayout>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    mc:Ignorable="d"
+    x:Class="AppCenterAuthDataSample.MainPage">
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+            <Button Text="Sign In" Clicked="HandleSignInButtonClicked" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Get Shared Data" Clicked="HandleGetSharedDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Get User Data" Clicked="HandleGetUserDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Add Data" Clicked="HandleAddDataButtonClicked" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="OutputLabel" Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
