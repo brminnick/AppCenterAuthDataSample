@@ -14,6 +14,9 @@ namespace AppCenterAuthDataSample
             MainPage = new MainPage();
         }
 
-        protected override void OnStart() => AppCenter.Start(AppCenterConstants.Key, typeof(Data), typeof(Auth));
+        protected override void OnStart()
+        {
+            
+        }
     }
 }
