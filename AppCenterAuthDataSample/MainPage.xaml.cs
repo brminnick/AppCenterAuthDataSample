@@ -18,6 +18,11 @@ namespace AppCenterAuthDataSample
     {
         public MainPage() => InitializeComponent();
 
+        async void HandleGetSharedDataButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+
         async void HandleSignInButtonClicked(object sender, EventArgs e)
         {
 
@@ -26,11 +31,6 @@ namespace AppCenterAuthDataSample
         async void HandleGetUserDataButtonClicked(object sender, EventArgs e)
         {
 
-        }
-
-        async void HandleGetSharedDataButtonClicked(object sender, EventArgs e)
-        {
- 
         }
 
         async void HandleAddDataButtonClicked(object sender, EventArgs e)
